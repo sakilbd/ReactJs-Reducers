@@ -1,20 +1,28 @@
-import logo from './logo.svg';
-import './index.css';
+import React, { useReducer } from 'react'
 
-
-
-import React, { Component } from 'react';
-
-
-class App extends Component {
-  
-render(){ 
-return (
-  <>
-  <h1>Hellow World</h1>
-  </>
-  );
-}
+const initialState = 0;
+const reducer = (state,action) =>{
+    switch(action){
+      case 'increment':
+        return state+1;
+        case 'decrement':
+          return state-1;  
+          default:
+            return state;
+    }
 }
 
-export default App;
+
+function App() {
+  const [count,dispatch] = useReducer(reducer,initialState);
+  return (
+    <div>
+      <div>Count {count}</div>
+      <button onClick={()=>dispatch('increment')}>Increase</button>
+      <button onClick={()=>dispatch('decrement')}>Decrease</button>
+
+    </div>
+  )
+}
+
+export default App
