@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import complexCounter from './complexCounter';
 
 
 
@@ -14,7 +13,7 @@ import complexCounter from './complexCounter';
 ReactDOM.render(
   
  
-  <complexCounter/>
+  <App/>
   ,
   document.getElementById('root')
 );

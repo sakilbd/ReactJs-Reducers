@@ -1,4 +1,5 @@
-import React, { useReducer } from 'react'
+import React, { useReducer } from 'react';
+import ComplexCounter from './ComplexCounter';
 
 const initialState = 0;
 const reducer = (state,action) =>{
@@ -20,7 +21,7 @@ function App() {
       <div>Count {count}</div>
       <button onClick={()=>dispatch('increment')}>Increase</button>
       <button onClick={()=>dispatch('decrement')}>Decrease</button>
-
+      <ComplexCounter/>
     </div>
   )
 }
