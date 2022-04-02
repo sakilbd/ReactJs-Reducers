@@ -21,7 +21,7 @@ function ComplexCounter() {
   const [count, dispatch] = useReducer(reducer, initialState);
   return (
     <div>
-      <h1>Complex Counter </h1>
+      <h3>Complex Counter </h3>
       <div>Count {count.counter}</div>
       <div>
         <button

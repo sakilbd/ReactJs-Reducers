@@ -1,5 +1,6 @@
 import React, { useReducer } from 'react';
 import ComplexCounter from './ComplexCounter';
+import CounterThree from './CounterThree';
 
 const initialState = 0;
 const reducer = (state,action) =>{
@@ -22,6 +23,7 @@ function App() {
       <button onClick={()=>dispatch('increment')}>Increase</button>
       <button onClick={()=>dispatch('decrement')}>Decrease</button>
       <ComplexCounter/>
+      <CounterThree/>
     </div>
   )
 }
