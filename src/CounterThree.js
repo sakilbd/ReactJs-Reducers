@@ -19,10 +19,10 @@ function CounterThree() {
   return (
     <div>
       <h3>Counter 3(Complex Counter Simplier) </h3>
-      <div>Count {count}</div>
+      <div>Counter 1 : {count}</div>
       <button onClick={() => dispatch("increment")}>Increase</button>
       <button onClick={() => dispatch("decrement")}>Decrease</button>
-      <div>Count {count2}</div>
+      <div>Counter 2 : {count2}</div>
       <button onClick={() => dispatch2("increment")}>Increase</button>
       <button onClick={() => dispatch2("decrement")}>Decrease</button>
     </div>
